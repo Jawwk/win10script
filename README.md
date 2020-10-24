@@ -1,7 +1,7 @@
 # win10script
 This is a Windows 10 debloat script from multiple debloat scripts and gists from github with some additions by me.
 
-This debloat script edited for my guide to optimize computer for gaming: https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/edit?usp=sharing
+This debloat script is edited for my guide to optimize computer for gaming: https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/edit?usp=sharing
 
 ## My Additions to this script
 
