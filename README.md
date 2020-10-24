@@ -1,8 +1,9 @@
 # win10script
 This is a Windows 10 debloat script from multiple debloat scripts and gists from github with some additions by me.
 
- One Line Powershell DeBloat Paste = ```powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTw1y')"```
+Open up a powershell window and paste one of the commands for what you want to do.
 
+DEBLOAT PASTE = ```powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTw1y')"```
 
 UNDO PASTE = powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTwMk')"
 
