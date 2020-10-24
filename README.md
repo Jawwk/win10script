@@ -5,33 +5,33 @@ This is a Windows 10 debloat script from multiple debloat scripts and gists from
 ## My Additions
 
 - Added Choice Prompts for: 
-         O&O Shutup, 
-         OneDrive, 
-         Xbox Apps, 
-         Powerplan, 
-         Windows Theme, 
-         Microsoft Office, 
-         Meltdown & Spectre, 
-         Photos App, 
+         O&O Shutup,
+         OneDrive,
+         Xbox Apps,
+         Powerplan,
+         Windows Theme,
+         Microsoft Office,
+         Meltdown & Spectre,
+         Photos App,
          YourPhone App,
          Cortana,
          Windows Update,
          Movies & Tv,
 
  - Turned off auto install of: 
-         Adobe, 
+         Adobe,
          Media Player Classic,
-         7zip, 
-         Chocalatey, 
-         Notepad ++, 
-   
+         7zip,
+         Chocalatey,
+         Notepad ++,
+
  - Changed Options: 
-         FastStartup, 
-         RemoteDesktop,              
+         FastStartup,
+         RemoteDesktop,
          Restart,
          LinuxSubsystem,
          Indexing,
-         Defender, 
+         Defender,
          DefenderCloud,
          UpdateMSRT,
          VideosFromThisPC,
@@ -48,12 +48,12 @@ This is a Windows 10 debloat script from multiple debloat scripts and gists from
          MeltdownCompatFlag,
 
 - Extra: 
-         unpin start menu function, 
+         unpin start menu function,
          Disabled Edge from auto running and automatic updates for chromium edge and google chrome,
          Print Spooler Manual launch,
          Re-enable all script to undo script changes,
 	 Uninstall HPSmart,
-         
+
 
 ## Modifications
 I encourage people to fork this project and comment out things they don't like!
