@@ -48,11 +48,11 @@ This is a Windows 10 debloat script from multiple debloat scripts and gists from
          MeltdownCompatFlag,
 
 - Extra: 
-         unpin start menu function 
-         Disabled Edge from auto running and automatic updates for chromium edge and google chrome
-         Print Spooler Manual launch
-         Re-enable all script to undo script changes
-	 Uninstall HPSmart
+         unpin start menu function, 
+         Disabled Edge from auto running and automatic updates for chromium edge and google chrome,
+         Print Spooler Manual launch,
+         Re-enable all script to undo script changes,
+	 Uninstall HPSmart,
          
 
 ## Modifications
