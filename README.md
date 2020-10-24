@@ -4,7 +4,7 @@ This is a Windows 10 debloat script from multiple debloat scripts and gists from
 
 ## My Additions
 
--Added Choice Prompts for: 
+- Added Choice Prompts for: 
          O&O Shutup, 
          OneDrive, 
          Xbox Apps, 
