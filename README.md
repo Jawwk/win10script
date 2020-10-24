@@ -7,9 +7,10 @@ Open up a powershell window and paste one of the commands for what you want to d
 `powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTw1y')"`
 
 ## UNDO PASTE = 
-```powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTwMk')"```
+`powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JTwMk')"`
 
-This debloat script is edited for my guide to optimize computer for gaming: https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/edit?usp=sharing
+### This debloat script is edited for my guide to optimize computer for gaming: 
+`https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/edit?usp=sharing`
 
 ## My Additions to this script
 
