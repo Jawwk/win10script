@@ -188,7 +188,7 @@ $tweaks = @(
                       
 ### External Program Setup ###
 	
-    #"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+        #"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	# "InstallAdobe",
 	# "Install7Zip",
 	# "InstallNotepadplusplus",
@@ -234,7 +234,7 @@ $tweaks = @(
 	"SetCurrentNetworkPrivate",       # "SetCurrentNetworkPublic",
 	"SetUnknownNetworksPrivate",      # "SetUnknownNetworksPublic",
 	"DisableNetDevicesAutoInst",      # "EnableNetDevicesAutoInst",
-	"DisableCtrldFolderAccess",	      # "EnableCtrldFolderAccess",
+	"DisableCtrldFolderAccess",	  # "EnableCtrldFolderAccess",
 	# "DisableFirewall",              # "EnableFirewall",
 	# "DisableDefender",              # "EnableDefender",
 	# "DisableDefenderCloud",         # "EnableDefenderCloud",
@@ -262,8 +262,8 @@ $tweaks = @(
 	"DisableSuperfetch",              # "EnableSuperfetch",
 	# "DisableIndexing",              # "EnableIndexing",
 	"SetBIOSTimeUTC",                 # "SetBIOSTimeLocal",
-	"DisableHibernation",		      # "EnableHibernation",
-	"EnableSleepButton",		      # "DisableSleepButton",
+	"DisableHibernation",		  # "EnableHibernation",
+	"EnableSleepButton",		  # "DisableSleepButton",
 	"DisableSleepTimeout",            # "EnableSleepTimeout",
 	"DisableFastStartup",             # "EnableFastStartup",
 
@@ -296,12 +296,12 @@ $tweaks = @(
 
 ### Explorer UI Tweaks ###
 	
-    "ShowKnownExtensions",            # "HideKnownExtensions",
+        "ShowKnownExtensions",            # "HideKnownExtensions",
 	# "ShowHiddenFiles",              # "HideHiddenFiles",
 	"HideSyncNotifications"           # "ShowSyncNotifications",
 	"HideRecentShortcuts",            # "ShowRecentShortcuts",
 	"SetExplorerThisPC",              # "SetExplorerQuickAccess",
-	"HideThisPCFromDesktop",	      # "ShowThisPCOnDesktop",
+	"HideThisPCFromDesktop",	  # "ShowThisPCOnDesktop",
 	# "ShowUserFolderOnDesktop",      # "HideUserFolderFromDesktop",
 	# "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",      # "ShowDesktopInExplorer",
