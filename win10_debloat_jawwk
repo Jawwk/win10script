@@ -2634,7 +2634,7 @@ Function Restart {
 Function CreateRestorePoint {
     Write-Output "Creating a System Restore Point incase something goes wrong."
     Enable-ComputerRestore -Drive "C:\"
-    Checkpoint-Computer -Description "Before DeBloat Script 1" -RestorePointType "MODIFY_SETTINGS" -ErrorAction SilentlyContinue
+    Checkpoint-Computer -Description "Before DeBloat Script 1" -RestorePointType "MODIFY_SETTINGS"
 }
 
 
