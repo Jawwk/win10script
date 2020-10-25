@@ -3,7 +3,6 @@ This is a Windows 10 debloat script from multiple debloat scripts and gists from
 
 
 Open up an admin powershell window and paste one of the commands for what you want to do.
-
 ## DEBLOAT PASTE = 
 `iex(New-Object Net.WebClient).DownloadString('https://git.io/JTw1y')`
 
