@@ -1,12 +1,12 @@
 # win10script
 This is a Windows 10 debloat script from multiple debloat scripts and gists from github with some additions by me.
 
-
+# How to use this script
 Open up an Admin Powershell window and paste one of the commands for what you want to do.
-## DEBLOAT PASTE = 
+### DEBLOAT PASTE = 
 `iex(New-Object Net.WebClient).DownloadString('https://git.io/JTw1y')`
 
-## UNDO PASTE = 
+### UNDO PASTE = 
 `iex(New-Object Net.WebClient).DownloadString('https://git.io/JTwMk')`
 
 ### This debloat script is edited for my guide to optimize your computer for gaming: 
