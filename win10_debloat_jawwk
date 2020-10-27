@@ -2937,6 +2937,7 @@ Function DisableEdgeAutoStartup {
     Disable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineUA" -ErrorAction SilentlyContinue | Out-Null
     Disable-ScheduledTask -TaskName "GoogleUpdateTaskMachineCore" -ErrorAction SilentlyContinue | Out-Null
     Disable-ScheduledTask -TaskName "GoogleUpdateTaskMachineUA" -ErrorAction SilentlyContinue | Out-Null
+    Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\gupdate" -Name "Start" -type DWord -Value 3 -ErrorAction SilentlyContinue
 }
 
 # Enable Microsoft Edge Startup and chrome auto update
@@ -2951,6 +2952,7 @@ Function EnableEdgeAutoStartup {
     Enable-ScheduledTask -TaskName "MicrosoftEdgeUpdateTaskMachineUA" -ErrorAction SilentlyContinue | Out-Null
     Enable-ScheduledTask -TaskName "GoogleUpdateTaskMachineCore" -ErrorAction SilentlyContinue | Out-Null
     Enable-ScheduledTask -TaskName "GoogleUpdateTaskMachineUA" -ErrorAction SilentlyContinue | Out-Null
+    Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\gupdate" -Name "Start" -type DWord -Value 2 -ErrorAction SilentlyContinue
 }
 
 # Windows Update Choice
