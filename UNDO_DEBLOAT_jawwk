@@ -252,7 +252,7 @@ $tweaks = @(
 "ShowSyncNotifications",
 "ShowRecentShortcuts",
 "SetExplorerQuickAccess",
-"ShowThisPCOnDesktop",
+#"ShowThisPCOnDesktop",
 	# "ShowUserFolderOnDesktop",      # "HideUserFolderFromDesktop",
 	# "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",      # "ShowDesktopInExplorer",
