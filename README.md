@@ -12,9 +12,9 @@ Open up an Admin Powershell window and paste one of the commands for what you wa
 
 ## method 2
 
- 1.) Download Zip files 
- 2.) Extract files 
- 3.) To Debloat run win10_debloat_jawwk.ps1 
+- 1.) Download Zip files 
+- 2.) Extract files  
+- 3.) To Debloat run win10_debloat_jawwk.ps1 
 
 *if you want to undo all changes made by script run UNDO_DEBLOAT_jawwk.ps1
 
