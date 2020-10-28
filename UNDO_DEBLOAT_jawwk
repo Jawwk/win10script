@@ -212,7 +212,7 @@ $tweaks = @(
 "EnableDefragmentation",
 "EnableSuperfetch",
 	# "DisableIndexing",              # "EnableIndexing",
-"SetBIOSTimeLocal",
+# "SetBIOSTimeLocal",
 "EnableHibernation",
 	# "EnableSleepButton",		      # "DisableSleepButton",
 "EnableSleepTimeout",
