@@ -27,7 +27,6 @@ https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/
 ## My Additions to this script
 
 - Added Choice Prompts for: 
-         O&O Shutup,
          OneDrive,
          Xbox Apps,
          Powerplan,
@@ -68,6 +67,7 @@ https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/
          Notepadplusplus,
          MediaPlayerClassic,
          MeltdownCompatFlag,
+	 SetBiosTime
 
 - Extra: 
          unpin start menu function,
@@ -75,6 +75,7 @@ https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/
          Print Spooler Manual launch,
          Re-enable all script to undo script changes,
 	 Uninstall HPSmart,
+	 Unpin Quick Access
 
 
 ## Modifications
