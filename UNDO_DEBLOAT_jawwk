@@ -129,6 +129,7 @@ $tweaks = @(
 # "EnableEdgeAutoStartup",   
 "enableappsuggestions",
     #"unpin",
+"PinQuickAccess",
 "PrintSpoolerAuto",
     #"UninstallHPSmart",               # "InstallHPSmart",
 
@@ -3191,6 +3192,17 @@ Function PrintSpoolerAuto {
     Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\Spooler" -Name "Start" -type DWord -Value 2
 }
 
+#Unpin Quick access in explorer 
+Function UnpinQuickAccess {
+    Write-Output "Unpinning Quick Access..."
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -Type DWord -Value 1 -ErrorAction SilentlyContinue | Out-Null
+}
+
+#Repin Quick access in explorer 
+Function PinQuickAccess {
+    Write-Output "Pinning Quick Access..."
+    Remove-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -ErrorAction SilentlyContinue | Out-Null
+}
 
 
 
