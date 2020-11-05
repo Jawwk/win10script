@@ -14,7 +14,6 @@
 #    Jawwk's Changes:
 # 
 #    -Added Choice Prompts for: 
-#         O&O Shutup,
 #         OneDrive,
 #         Xbox Apps,
 #         Powerplan,
@@ -55,6 +54,7 @@
 #         Notepadplusplus,
 #         MediaPlayerClassic,
 #         MeltdownCompatFlag,
+#         SetBIOSTime,
 #
 #    - Extra: 
 #         unpin start menu function,
@@ -62,6 +62,7 @@
 #         Print Spooler Manual launch,
 #         Re-enable all script to undo script changes,
 #	  Uninstall HPSmart,
+#         unpin quick access,
 #
 #
 #
@@ -87,9 +88,9 @@ $tweaks = @(
 
 ### O&O recommeded settings Choice ###
     
-    "OOShutupChoice", "skipline",
+    #"OOShutupChoice", "skipline",
     
-    # "ooshutup10rec",
+    "ooshutup10rec",
 
 
 ### Powerplan Choice ###                                       
@@ -178,6 +179,7 @@ $tweaks = @(
     "HideRecentlyAddedApps",          # "UnHideRecentlyAddedApps",
     "DisableEdgeAutoStartup",         # "EnableEdgeAutoStartup",   
     "unpin",
+    "UnpinQuickAccess"                # "PinQuickAccess",
     "PrintSpoolerManual",             # "PrintSpoolerAuto",
     "UninstallHPSmart",               # "InstallHPSmart",
 
@@ -367,7 +369,6 @@ $tweaks = @(
 #########
 
 Function ooshutup10rec {
-	Write-Output "Pulling Recommended Settings for O&O Shutup Script and running..."
 	Import-Module BitsTransfer
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
@@ -3228,7 +3229,17 @@ Function PrintSpoolerAuto {
     Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Services\Spooler" -Name "Start" -type DWord -Value 2
 }
 
+#Unpin Quick access in explorer 
+Function UnpinQuickAccess {
+    Write-Output "Unpinning Quick Access..."
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -Type DWord -Value 1 -ErrorAction SilentlyContinue | Out-Null
+}
 
+#Repin Quick access in explorer 
+Function PinQuickAccess {
+    Write-Output "Pinning Quick Access..."
+    Remove-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -ErrorAction SilentlyContinue | Out-Null
+}
 
 
 
