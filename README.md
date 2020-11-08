@@ -38,6 +38,7 @@ https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/
          Cortana,
          Windows Update,
          Movies & Tv,
+	 Action Center,
 
  - Turned off auto install of: 
          Adobe,
