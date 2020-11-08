@@ -2633,13 +2633,15 @@ Function HighPerformance {
     powercfg -x disk-timeout-ac 0
     powercfg -x disk-timeout-dc 0
     powercfg -x monitor-timeout-ac 15
-	powercfg -x monitor-timeout-dc 5
+    powercfg -x monitor-timeout-dc 5
+    powercfg /h off
 }
 
 # Stock Balanced power Plan
 Function Balanced {
     Write-Output "Setting Powerplan to Balanced..."
     powercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e
+    powercfg /h on
 }
 
 # Xbox App Choice
