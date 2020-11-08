@@ -158,6 +158,12 @@ $tweaks = @(
     # "UninstallOffice",              # "InstallOffice",
 
 
+### Action Center Choice ###
+
+    "ActionCenterChoice", "skipline",
+    #"DisableActionCenter",            # "EnableActionCenter",
+
+
 ### Meltdown Spectre Choice ###
     
     "MeltdownSpectreChoicePrompt", "skipline",
@@ -272,7 +278,7 @@ $tweaks = @(
 
 ### UI Tweaks ###
 	
-        "DisableActionCenter",            # "EnableActionCenter",
+        #"DisableActionCenter",           # "EnableActionCenter",
 	"DisableLockScreen",              # "EnableLockScreen",
 	# "DisableLockScreenRS1",         # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
@@ -3241,6 +3247,22 @@ Function PinQuickAccess {
     Write-Output "Pinning Quick Access..."
     Remove-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -ErrorAction SilentlyContinue | Out-Null
 }
+
+Function ActionCenterChoice {
+	Write-host " QUESTION: Do you use Action Center? (Laptop brightness, Bluetooth controls, App Notifications) " -ForegroundColor Yellow
+    $Readhost = Read-Host " 
+
+    Y = Yes | N = No "
+    Switch ($ReadHost) 
+    { 
+    N {DisableActionCenter}
+    Y {EnableActionCenter}
+    } 
+}
+
+
+
+
 
 
 
