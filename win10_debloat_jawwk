@@ -367,7 +367,8 @@ $tweaks = @(
                       
 ### Auxiliary Functions ###
 	"skipline", "skipline", "restartpls"
-        "WaitForKey"
+        "WaitForKey", 
+	"Close"
 	# "Restart"
 )
 
@@ -3273,7 +3274,10 @@ Function ActionCenterChoice {
 }
 
 
-
+#Close Powershell after key 
+Function Close {
+stop-process -Id $PID
+}
 
 
 
