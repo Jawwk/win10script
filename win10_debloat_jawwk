@@ -91,7 +91,7 @@ $tweaks = @(
     
     #"OOShutupChoice", "skipline",
     
-    "ooshutup10rec",
+    "ooshutup10rec",                  #"UNDOooshutup10rec",
 
 
 ### Powerplan Choice ###                                       
@@ -377,7 +377,14 @@ $tweaks = @(
 
 Function ooshutup10rec {
 	Import-Module BitsTransfer
-	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/Jawwk/win10script/master/newooshutup10.cfg" -Destination ooshutup10.cfg
+	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
+	./OOSU10.exe ooshutup10.cfg /quiet
+}
+
+Function UNDOooshutup10rec {
+	Import-Module BitsTransfer
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/Jawwk/win10script/master/UNDOooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
@@ -2659,10 +2666,11 @@ Function OOShutupChoice {
 	Write-host " QUESTION: Want to Run O&O Shutup with Recommended Settings? *Highly Recommended as it Disables Most Telemetry*" -ForegroundColor Yellow
     $Readhost = Read-Host " 
 
-    ENTER key = skip | Y = Yes "
+    Y = Yes | N = No "
     Switch ($ReadHost) 
     { 
     Y {ooshutup10rec} 
+    N {UNDOooshutup10rec}
     } 
 } 
 
