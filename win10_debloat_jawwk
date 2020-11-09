@@ -2911,6 +2911,10 @@ Function UninstallOffice {
     Write-Output "Trying to remove Microsoft Office..."
 	Get-AppxPackage "Microsoft.MicrosoftOfficeHub" | Remove-AppxPackage
     Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
+    Remove-Item -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Excel.lnk" -Recurse -Force -ErrorAction Ignore 
+    Remove-Item -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Powerpoint.lnk" -Recurse -Force -ErrorAction Ignore 
+    Remove-Item -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Outlook.lnk" -Recurse -Force -ErrorAction Ignore 
+    Remove-Item -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Word.lnk" -Recurse -Force -ErrorAction Ignore
 }
 
 # Install Microsoft Office
