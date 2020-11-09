@@ -39,7 +39,7 @@ $tweaks = @(
     
     #"OOShutupChoice", "skipline",
     
-    # "ooshutup10rec",
+"UNDOooshutup10rec",    # "ooshutup10rec",
 
 
 ### Powerplan Choice ###                                       
@@ -319,9 +319,15 @@ $tweaks = @(
 #########
 
 Function ooshutup10rec {
-	Write-Output "Pulling Recommended Settings for O&O Shutup Script and running..."
 	Import-Module BitsTransfer
-	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/Jawwk/win10script/master/newooshutup10.cfg" -Destination ooshutup10.cfg
+	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
+	./OOSU10.exe ooshutup10.cfg /quiet
+}
+
+Function UNDOooshutup10rec {
+	Import-Module BitsTransfer
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/Jawwk/win10script/master/UNDOooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
 }
