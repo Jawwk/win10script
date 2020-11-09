@@ -311,6 +311,7 @@ $tweaks = @(
 ### Auxiliary Functions ###
 	"skipline", "skipline", "restartpls"
     "WaitForKey"
+    "Close"
 	# "Restart"
 )
 
@@ -3212,7 +3213,10 @@ Function PinQuickAccess {
     Remove-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -ErrorAction SilentlyContinue | Out-Null
 }
 
-
+#Close Powershell after key 
+Function Close {
+stop-process -Id $PID
+}
 
 
 
