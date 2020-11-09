@@ -183,8 +183,8 @@ $tweaks = @(
 ### Extra ##
     
     # "MinecraftChoicePrompt",        # "UninstallMinecraft",           # "InstallMinecraft",
+    "DisableEdgeAutoStartup",         # "EnableEdgeAutoStartup",    
     "HideRecentlyAddedApps",          # "UnHideRecentlyAddedApps",
-    "DisableEdgeAutoStartup",         # "EnableEdgeAutoStartup",   
     "unpin",
     "UnpinQuickAccess"                # "PinQuickAccess",
     "PrintSpoolerManual",             # "PrintSpoolerAuto",
