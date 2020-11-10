@@ -3257,6 +3257,7 @@ Function PrintSpoolerAuto {
 Function UnpinQuickAccess {
     Write-Output "Unpinning Quick Access..."
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HubMode" -Type DWord -Value 1 -ErrorAction SilentlyContinue | Out-Null
+    Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Modules\GlobalSettings\Sizer" -Name "PageSpaceControlSizer" -Type Binary -Value ([byte[]](0xa0,0x00,0x00,0x00,0x01,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x56,0x05,0x00,0x00)) -ErrorAction SilentlyContinue | Out-Null
 }
 
 #Repin Quick access in explorer 
