@@ -197,7 +197,7 @@ $tweaks = @(
                       
 ### External Program Setup ###
 	
-        #"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+        # "InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	# "InstallAdobe",
 	# "Install7Zip",
 	# "InstallNotepadplusplus",
@@ -279,8 +279,8 @@ $tweaks = @(
 
 ### UI Tweaks ###
 	
-        #"DisableActionCenter",           # "EnableActionCenter",
-	"DisableLockScreen",              # "EnableLockScreen",
+        # "DisableActionCenter",          # "EnableActionCenter",
+	# "DisableLockScreen",            # "EnableLockScreen",
 	# "DisableLockScreenRS1",         # "EnableLockScreenRS1",
 	# "HideNetworkFromLockScreen",    # "ShowNetworkOnLockScreen",
 	# "HideShutdownFromLockScreen",   # "ShowShutdownOnLockScreen",
