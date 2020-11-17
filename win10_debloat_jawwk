@@ -3035,7 +3035,7 @@ Function wait {
 # Unpin all the Start tiles
 Function unpin
 	{
-   Write-Output "Unpining all startmenu tiles..."
+   Write-Output "Unpinning all startmenu tiles..."
 		$StartMenuLayout = @"
 <LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
 <LayoutOptions StartTileGroupCellWidth="6" />
