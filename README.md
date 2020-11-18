@@ -18,7 +18,7 @@ Open up an Admin Powershell window and paste one of the commands for what you wa
 
 *if you want to undo all changes made by script run UNDO_DEBLOAT_jawwk.ps1
 
-Video : <iframe width="560" height="315" src="https://www.youtube.com/embed/I3cPJLi8TDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Video : https://youtu.be/I3cPJLi8TDI
 
 ### This debloat script is edited for my guide to optimize your computer for gaming: 
 https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/edit?usp=sharing
