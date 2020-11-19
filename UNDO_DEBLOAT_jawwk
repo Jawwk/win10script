@@ -249,7 +249,7 @@ $tweaks = @(
 ### Explorer UI Tweaks ###
 	
 "HideKnownExtensions",
-	# "ShowHiddenFiles",              # "HideHiddenFiles",
+"HideHiddenFiles",
 "ShowSyncNotifications",
 "ShowRecentShortcuts",
 "SetExplorerQuickAccess",
