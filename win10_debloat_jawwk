@@ -272,8 +272,8 @@ $tweaks = @(
 	# "DisableIndexing",              # "EnableIndexing",
 	# "SetBIOSTimeUTC",               # "SetBIOSTimeLocal",
 	"DisableHibernation",		  # "EnableHibernation",
-	"EnableSleepButton",		  # "DisableSleepButton",
-	"DisableSleepTimeout",            # "EnableSleepTimeout",
+	# "EnableSleepButton",		  # "DisableSleepButton",
+	# "DisableSleepTimeout",          # "EnableSleepTimeout",
 	"DisableFastStartup",             # "EnableFastStartup",
 
 
@@ -1312,8 +1312,6 @@ Function EnableSleepButton {
 # Disable display and sleep mode timeouts
 Function DisableSleepTimeout {
 	Write-Output "Disabling display and sleep mode timeouts..."
-	powercfg /X monitor-timeout-ac 0
-	powercfg /X monitor-timeout-dc 0
 	powercfg /X standby-timeout-ac 0
 	powercfg /X standby-timeout-dc 0
 }
@@ -2685,7 +2683,7 @@ Function SetPowerplan {
     { 
     L {Balanced}
 	N {Balanced}
-	G {HighPerformance} 
+	G {HighPerformance; DisableSleepTimeout} 
     } 
 } 
 
@@ -2697,9 +2695,7 @@ Function HighPerformance {
     powercfg -setactive scheme_current
     powercfg -x disk-timeout-ac 0
     powercfg -x disk-timeout-dc 0
-    powercfg -x monitor-timeout-ac 15
-    powercfg -x monitor-timeout-dc 15
-    powercfg /h off 
+    powercfg /h off
 }   
 
 
