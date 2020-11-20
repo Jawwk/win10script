@@ -216,7 +216,7 @@ $tweaks = @(
 # "SetBIOSTimeLocal",
 "EnableHibernation",
 	# "EnableSleepButton",		      # "DisableSleepButton",
-"EnableSleepTimeout",
+# "EnableSleepTimeout",
 "EnableFastStartup",
 
 
