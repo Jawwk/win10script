@@ -2729,6 +2729,7 @@ Function DisableXboxFeaturesAll {
 	Get-AppxPackage "Microsoft.XboxGameOverlay" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.XboxGamingOverlay" | Remove-AppxPackage
         Get-AppxPackage "Microsoft.Xbox.TCUI" | Remove-AppxPackage
+        Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 0
 }
 
 # New Enable Xbox features
@@ -2740,6 +2741,7 @@ Function EnableXboxFeaturesAll {
 	Get-AppxPackage -AllUsers "Microsoft.XboxGameOverlay" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 	Get-AppxPackage -AllUsers "Microsoft.XboxGamingOverlay" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
         Get-AppxPackage -AllUsers "Microsoft.Xbox.TCUI" | ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+        Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 1
 }
 
 # Windows Theme Choice
