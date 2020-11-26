@@ -1311,7 +1311,6 @@ Function EnableSleepButton {
 
 # Disable display and sleep mode timeouts
 Function DisableSleepTimeout {
-	Write-Output "Disabling display and sleep mode timeouts..."
 	powercfg /X standby-timeout-ac 0
 	powercfg /X standby-timeout-dc 0
 }
