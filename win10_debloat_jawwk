@@ -1311,6 +1311,9 @@ Function EnableSleepButton {
 
 # Disable display and sleep mode timeouts
 Function DisableSleepTimeout {
+	Write-Output "Disabling display and sleep mode timeouts..."
+	powercfg /X monitor-timeout-ac 0
+	powercfg /X monitor-timeout-dc 0
 	powercfg /X standby-timeout-ac 0
 	powercfg /X standby-timeout-dc 0
 }
@@ -2682,7 +2685,7 @@ Function SetPowerplan {
     { 
     L {Balanced}
 	N {Balanced}
-	G {HighPerformance; DisableSleepTimeout} 
+	G {HighPerformance} 
     } 
 } 
 
