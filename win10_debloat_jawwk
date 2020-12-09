@@ -670,7 +670,6 @@ Function EnableAdvertisingID {
 
 # Disable Cortana
 Function DisableCortana {
-	Write-Output "Disabling Cortana..."
 	If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\Personalization\Settings")) {
 		New-Item -Path "HKCU:\SOFTWARE\Microsoft\Personalization\Settings" -Force | Out-Null
 	}
@@ -692,7 +691,6 @@ Function DisableCortana {
 
 # Enable Cortana
 Function EnableCortana {
-	Write-Output "Enabling Cortana..."
 	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Personalization\Settings" -Name "AcceptedPrivacyPolicy" -ErrorAction SilentlyContinue
 	If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore")) {
 		New-Item -Path "HKCU:\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore" -Force | Out-Null
