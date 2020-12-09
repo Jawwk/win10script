@@ -56,6 +56,9 @@
 #         MediaPlayerClassic,
 #         MeltdownCompatFlag,
 #         SetBIOSTime,
+#         PhotoViewerAssociation,
+#         PhotoViewerOpenWith,
+#         MediaPlayer,
 #
 #    - Extra: 
 #         unpin start menu function,
@@ -252,13 +255,13 @@ $tweaks = @(
 	# "EnableCIMemoryIntegrity",      # "DisableCIMemoryIntegrity",
 	# "DisableScriptHost",            # "EnableScriptHost",
 	# "EnableDotNetStrongCrypto",     # "DisableDotNetStrongCrypto",
-	# "DisableMeltdownCompatFlag",    # "EnableMeltdownCompatFlag"
+	# "DisableMeltdownCompatFlag",    # "EnableMeltdownCompatFlag",
 
 
 ### Service Tweaks ###
 	
         # "DisableUpdateMSRT",            # "EnableUpdateMSRT",
-	# "EnableUpdateDriver"            # "DisableUpdateDriver",
+	# "EnableUpdateDriver",           # "DisableUpdateDriver",
 	"DisableUpdateRestart",           # "EnableUpdateRestart",
 	"DisableHomeGroups",              # "EnableHomeGroups",
 	# "DisableSharedExperiences",     # "EnableSharedExperiences",
@@ -336,13 +339,13 @@ $tweaks = @(
 	"UninstallThirdPartyBloat",       # "InstallThirdPartyBloat",
 	# "UninstallWindowsStore",        # "InstallWindowsStore",
 	"DisableAdobeFlash",              # "EnableAdobeFlash",
-	"InstallMediaPlayer", 		  # "UninstallMediaPlayer",
+	# "InstallMediaPlayer",           # "UninstallMediaPlayer",
 	"UninstallInternetExplorer",      # "InstallInternetExplorer",
 	"UninstallWorkFolders",           # "InstallWorkFolders",
 	# "InstallLinuxSubsystem",        # "UninstallLinuxSubsystem",
 	# "InstallHyperV",                # "UninstallHyperV",
-	"SetPhotoViewerAssociation",      # "UnsetPhotoViewerAssociation",
-	"AddPhotoViewerOpenWith",         # "RemovePhotoViewerOpenWith",
+	# "SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
+	# "AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
 	"InstallPDFPrinter",		  # "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
@@ -2817,7 +2820,7 @@ Function PhotosChoice {
     Y = Yes | N = No "
     Switch ($ReadHost) 
     { 
-    N {UninstallPhotos}
+    N {UninstallPhotos; InstallMediaPlayer; SetPhotoViewerAssociation; AddPhotoViewerOpenWith}
 	Y {InstallPhotos}
 	} 
 } 
