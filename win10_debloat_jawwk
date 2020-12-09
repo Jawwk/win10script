@@ -2342,7 +2342,6 @@ Function UninstallMediaPlayer {
 
 # Install Windows Media Player
 Function InstallMediaPlayer {
-	Write-Output "Installing Windows Media Player..."
 	Enable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer" -NoRestart -WarningAction SilentlyContinue | Out-Null
 }
 
@@ -2413,7 +2412,6 @@ Function UninstallHyperV {
 
 # Set Photo Viewer association for bmp, gif, jpg, png and tif
 Function SetPhotoViewerAssociation {
-	Write-Output "Setting Photo Viewer association for bmp, gif, jpg, png and tif..."
 	If (!(Test-Path "HKCR:")) {
 		New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 	}
@@ -2442,7 +2440,6 @@ Function UnsetPhotoViewerAssociation {
 
 # Add Photo Viewer to "Open with..."
 Function AddPhotoViewerOpenWith {
-	Write-Output "Adding Photo Viewer to `"Open with...`""
 	If (!(Test-Path "HKCR:")) {
 		New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 	}
