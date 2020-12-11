@@ -68,7 +68,10 @@ https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/
          Notepadplusplus,
          MediaPlayerClassic,
          MeltdownCompatFlag,
-	 SetBiosTime
+	 SetBiosTime,
+	 PhotoViewerAssociation,
+         PhotoViewerOpenWith,
+         MediaPlayer
 
 - Extra: 
          unpin start menu function,
