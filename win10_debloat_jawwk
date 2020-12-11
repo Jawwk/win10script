@@ -296,7 +296,7 @@ $tweaks = @(
 	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	# "HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
-	"ShowTrayIcons",                  # "HideTrayIcons",
+	# "ShowTrayIcons",                # "HideTrayIcons",
 	"DisableSearchAppInStore",        # "EnableSearchAppInStore",
 	"DisableNewAppPrompt",            # "EnableNewAppPrompt",
 	# "SetControlPanelSmallIcons",    # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
@@ -346,7 +346,7 @@ $tweaks = @(
 	# "InstallHyperV",                # "UninstallHyperV",
 	# "SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	# "AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
-	"InstallPDFPrinter",		  # "UninstallPDFPrinter",
+	# "InstallPDFPrinter",		  # "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
 
