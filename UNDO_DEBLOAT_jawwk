@@ -22,12 +22,12 @@ $tweaks = @(
 
 ### Require administrator privileges ###
 	
-    "RequireAdmin",
+       "RequireAdmin",
 
 
 ### Restore Point ###
     
-    #"CreateRestorePoint", "skipline",
+       #"CreateRestorePoint", "skipline",
                 
 
 ##########
@@ -37,26 +37,26 @@ $tweaks = @(
 
 ### O&O recommeded settings Choice ###
     
-    #"OOShutupChoice", "skipline",
+       #"OOShutupChoice", "skipline",
     
 "UNDOooshutup10rec",    # "ooshutup10rec",
 
 
 ### Powerplan Choice ###                                       
     
-    #"SetPowerplan", "skipline",
+       #"SetPowerplan", "skipline",
          
 "Balanced"
 
 ### Windows Update choice
 
-    #"UpdatesChoice", "skipline", 
+       #"UpdatesChoice", "skipline", 
     
 "DefaultWindowsUpdate",
 
 ### Cortana choice
 
-    #"CortanaChoice", "skipline",
+       #"CortanaChoice", "skipline",
 
 "InstallCortana",
 "EnableCortana",
@@ -64,15 +64,15 @@ $tweaks = @(
 
 ### Xbox App Choice ###
     
-    #"XboxAppChoicePrompt", "skipline", 
+       #"XboxAppChoicePrompt", "skipline", 
     
 "EnableXboxFeaturesAll",
-    # "XboxGameBarChoicePrompt",
+       # "XboxGameBarChoicePrompt",
                       
 
 ### Windows Phone App Choice ###
     
-    #"PhoneChoice", "skipline",
+       #"PhoneChoice", "skipline",
     
 "InstallPhone",
 "EnableSharedExperiences",
@@ -81,27 +81,27 @@ $tweaks = @(
 
 ### Windows Photos App Choice ###
 
-    #"PhotosChoice", "skipline", 
+       #"PhotosChoice", "skipline", 
     
 "InstallPhotos",
 
 
 ### Movies & TV Choice##    
-    #"MoviesTVChoice", "skipline",
+       #"MoviesTVChoice", "skipline",
     
 "InstallMoviesTV",              # "UninstallMoviesTV",
 
 
 ### Office Choice ###
  
-    #"OfficeChoice", "skipline",
+      #"OfficeChoice", "skipline",
     
 "InstallOffice",
 
 
 ### Meltdown Spectre Choice ###
     
-    #"MeltdownSpectreChoicePrompt", "skipline",
+      #"MeltdownSpectreChoicePrompt", "skipline",
     
 
 "EnableMeltdownCompatFlag",
@@ -109,14 +109,14 @@ $tweaks = @(
                                    
 ### Windows Theme Choice ###
      
-    #"WindowsThemeChoice", "skipline",
+      #"WindowsThemeChoice", "skipline",
     
-    # "EnableDarkMode",				  # "DisableDarkMode",
+      # "EnableDarkMode",				  # "DisableDarkMode",
 
 
 ### One Drive Choice ###
     
-    #"OneDriveChoicePrompt", "skipline", "auto", "wait", "skipline",    
+       #"OneDriveChoicePrompt", "skipline", "auto", "wait", "skipline",    
     
 "EnableOneDrive",
 "InstallOneDrive",
@@ -124,14 +124,14 @@ $tweaks = @(
       
 ### Extra ##
     
-    # "MinecraftChoicePrompt",        # "UninstallMinecraft",           # "InstallMinecraft",
+        # "MinecraftChoicePrompt",        # "UninstallMinecraft",           # "InstallMinecraft",
 "UnHideRecentlyAddedApps",
-# "EnableEdgeAutoStartup",   
+        # "EnableEdgeAutoStartup",   
 "enableappsuggestions",
-    #"unpin",
+        #"unpin",
 "PinQuickAccess",
 "PrintSpoolerAuto",
-    #"UninstallHPSmart",               # "InstallHPSmart",
+        #"UninstallHPSmart",             # "InstallHPSmart",
 
 
 
@@ -151,14 +151,14 @@ $tweaks = @(
                       
 ### Windows Apps ###
 	
-    #"DebloatAll",
+        #"DebloatAll",
 
 
 ### Privacy Tweaks ###
 	
 "EnableTelemetry",
 "EnableWiFiSense",
-	# "DisableSmartScreen",             # "EnableSmartScreen",
+	# "DisableSmartScreen",           # "EnableSmartScreen",
 "EnableWebSearch",
 "EnableAppSuggestions",
 "EnableActivityHistory",
@@ -180,17 +180,17 @@ $tweaks = @(
 "SetUACHigh",
 	# "EnableSharingMappedDrives",    # "DisableSharingMappedDrives",
 	# "DisableAdminShares",           # "EnableAdminShares",
-    # "EnableSMB1",
+        # "EnableSMB1",
 	# "DisableSMBServer",             # "EnableSMBServer",
 	# "DisableLLMNR",                 # "EnableLLMNR",
-#"SetCurrentNetworkPublic",
-#"SetUnknownNetworksPublic",
+        # "SetCurrentNetworkPublic",
+        # "SetUnknownNetworksPublic",
 "EnableNetDevicesAutoInst",
 "EnableCtrldFolderAccess",
 	# "DisableFirewall",              # "EnableFirewall",
 	# "DisableDefender",              # "EnableDefender",
 	# "DisableDefenderCloud",         # "EnableDefenderCloud",
-	# "EnableF8BootMenu",               # "DisableF8BootMenu",
+	# "EnableF8BootMenu",             # "DisableF8BootMenu",
 	# "SetDEPOptOut",                 # "SetDEPOptIn",
 	# "EnableCIMemoryIntegrity",      # "DisableCIMemoryIntegrity",
 	# "DisableScriptHost",            # "EnableScriptHost",
@@ -200,10 +200,10 @@ $tweaks = @(
 
 ### Service Tweaks ###
 	
-    # "DisableUpdateMSRT",            # "EnableUpdateMSRT",
+        # "DisableUpdateMSRT",            # "EnableUpdateMSRT",
 	# "EnableUpdateDriver"            # "DisableUpdateDriver",
 "EnableUpdateRestart",
-    #"EnableHomeGroups",
+        #"EnableHomeGroups",
 	# "DisableSharedExperiences",     # "EnableSharedExperiences",
 "EnableRemoteAssistance",
 "EnableRemoteDesktop",
@@ -213,10 +213,10 @@ $tweaks = @(
 "EnableDefragmentation",
 "EnableSuperfetch",
 	# "DisableIndexing",              # "EnableIndexing",
-# "SetBIOSTimeLocal",
+        # "SetBIOSTimeLocal",
 "EnableHibernation",
-	# "EnableSleepButton",		      # "DisableSleepButton",
-# "EnableSleepTimeout",
+	# "EnableSleepButton",		  # "DisableSleepButton",
+        # "EnableSleepTimeout",
 "EnableFastStartup",
 
 
@@ -236,7 +236,7 @@ $tweaks = @(
 	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	# "HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
-"HideTrayIcons",
+        # "HideTrayIcons",
 "EnableSearchAppInStore",
 "EnableNewAppPrompt",
 	# "SetControlPanelSmallIcons",    # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
@@ -253,7 +253,7 @@ $tweaks = @(
 "ShowSyncNotifications",
 "ShowRecentShortcuts",
 "SetExplorerQuickAccess",
-#"ShowThisPCOnDesktop",
+        # "ShowThisPCOnDesktop",
 	# "ShowUserFolderOnDesktop",      # "HideUserFolderFromDesktop",
 	# "HideDesktopFromThisPC",        # "ShowDesktopInThisPC",
 	# "HideDesktopFromExplorer",      # "ShowDesktopInExplorer",
@@ -286,7 +286,7 @@ $tweaks = @(
 	# "InstallHyperV",                # "UninstallHyperV",
 "UnsetPhotoViewerAssociation",
 "RemovePhotoViewerOpenWith",
-"UninstallPDFPrinter",
+        # "UninstallPDFPrinter",
 	# "UninstallXPSPrinter",          # "InstallXPSPrinter",
 	# "RemoveFaxPrinter",             # "AddFaxPrinter",
 
