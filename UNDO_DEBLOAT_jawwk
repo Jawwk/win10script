@@ -104,7 +104,7 @@ $tweaks = @(
       #"MeltdownSpectreChoicePrompt", "skipline",
     
 
-"EnableMeltdownCompatFlag",
+#"EnableMeltdownCompatFlag",
 
                                    
 ### Windows Theme Choice ###
