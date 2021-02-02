@@ -19,7 +19,6 @@
 #         Powerplan,
 #         Windows Theme,
 #         Microsoft Office,
-#         Meltdown & Spectre,
 #         Photos App,
 #         YourPhone App,
 #         Cortana,
@@ -54,7 +53,6 @@
 #         7Zip,
 #         Notepadplusplus,
 #         MediaPlayerClassic,
-#         MeltdownCompatFlag,
 #         SetBIOSTime,
 #         PhotoViewerAssociation,
 #         PhotoViewerOpenWith,
@@ -170,7 +168,7 @@ $tweaks = @(
 
 ### Meltdown Spectre Choice ###
     
-    "MeltdownSpectreChoicePrompt", "skipline",
+    # "MeltdownSpectreChoicePrompt", "skipline",
     
 
     # "DisableMeltdownCompatFlag",    # "EnableMeltdownCompatFlag",
