@@ -129,7 +129,7 @@ $tweaks = @(
         # "EnableEdgeAutoStartup",   
 "enableappsuggestions",
         #"unpin",
-"PinQuickAccess",
+#"PinQuickAccess",
 "PrintSpoolerAuto",
         #"UninstallHPSmart",             # "InstallHPSmart",
 
