@@ -211,7 +211,7 @@ $tweaks = @(
 "EnableAutorun",
 "EnableStorageSense",
 "EnableDefragmentation",
-"EnableSuperfetch",
+#"EnableSuperfetch",
 	# "DisableIndexing",              # "EnableIndexing",
         # "SetBIOSTimeLocal",
 "EnableHibernation",
