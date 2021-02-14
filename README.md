@@ -77,7 +77,6 @@ https://docs.google.com/document/d/14s_rcDk_CPQGHj2dec5-444rSgZj6BthzoTj-bzBtkU/
          Print Spooler Manual launch,
          Re-enable all script to undo script changes,
 	 Uninstall HPSmart,
-	 Unpin Quick Access
 
 
 ## Modifications
